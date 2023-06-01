@@ -1,0 +1,156 @@
+.container {
+    position: relative;
+}
+
+.all-line {
+    margin-bottom: 20px;
+    height: 100px;
+
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.text {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    font-family: comic sans ms;
+
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.one {
+    background-color: #FF4040;
+
+    animation-name: line-disappearance;
+    animation-delay: 1s;
+} 
+
+.two {
+    background-color: #FF7373;
+
+    animation-name: line-disappearance;
+    animation-delay: 3s;
+}
+
+.three {
+    background-color: #BF7130;
+
+    animation-name: line-disappearance;
+    animation-delay: 5s;
+}
+
+.four {
+    background-color: #A64B00;
+
+    animation-name: line-disappearance;
+    animation-delay: 7s;
+} 
+
+.five {
+    background-color: #1D7373;
+
+    animation-name: line-disappearance;
+    animation-delay: 9s;
+}
+
+.six {
+    background-color: #006363;
+
+    animation-name: line-disappearance;
+    animation-delay: 11s;
+}
+
+.seven {
+    background-color: #269926;
+
+    animation-name: line-disappearance;
+    animation-delay: 13s;
+}
+
+.eight {
+    background-color: #008500;
+
+    animation-name: line-disappearance;
+    animation-delay: 15s;
+}
+
+.t-one {
+    animation-name: text-appearance;
+    animation-delay: 2s;
+}
+
+.t-two {
+    animation-name: text-appearance;
+    animation-delay: 4s;
+}
+
+.t-three {
+    animation-name: text-appearance;
+    animation-delay: 6s;
+}
+
+.t-four {
+    animation-name: text-appearance;
+    animation-delay: 8s;
+}
+
+.t-five {
+    animation-name: text-appearance;
+    animation-delay: 10s;
+}
+
+.t-six {
+    animation-name: text-appearance;
+    animation-delay: 12s;
+}
+.t-seven {
+    font-size: 7px;
+
+    animation-name: text-appearance;
+    animation-delay: 14s;
+}
+
+@keyframes line-disappearance {
+    0% {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+@keyframes text-appearance {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    90% {
+        opacity: 0.6;
+        transform: scaleX(0.9);
+        transform-origin: right;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+}
